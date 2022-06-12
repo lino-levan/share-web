@@ -17,7 +17,11 @@ const sequelize = new Sequelize(process.env.DB_NAME!, process.env.DB_USERNAME!, 
 const { Program, User } = createModels(sequelize)
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  const programs = (await Program.findAll() as any).map((program: any)=>{
+  const programs = (await Program.findAll({
+    order: [
+      ['upvotes', 'DESC'],
+    ],
+  }) as any).map((program: any)=>{
     delete program.dataValues.code
     
     return program.dataValues
