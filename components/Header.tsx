@@ -47,7 +47,7 @@ export function Header() {
             </div>
           </>
           :
-          <a href="/api/auth/signin" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-sky-500 hover:bg-white mt-4 lg:mt-0">Sign in</a>
+          <Link href="/api/auth/signin" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-sky-500 hover:bg-white mt-4 lg:mt-0">Sign in</Link>
         }
       </div>
     </nav>

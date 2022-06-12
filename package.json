@@ -12,6 +12,7 @@
     "@monaco-editor/react": "^4.4.5",
     "html2canvas": "^1.4.1",
     "mysql2": "^2.3.3",
+    "netlify-cli": "^10.5.1",
     "next": "12.1.6",
     "next-auth": "^4.5.0",
     "react": "18.1.0",
