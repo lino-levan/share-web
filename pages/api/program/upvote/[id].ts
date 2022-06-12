@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { getSession } from 'next-auth/react';
 import { Sequelize } from "sequelize";
+import mysql2 from 'mysql2'
 import { createModels } from '../../../../lib/createModels';
 
 const sequelize = new Sequelize(process.env.DB_NAME!, process.env.DB_USERNAME!, process.env.DB_PASSWORD!, {

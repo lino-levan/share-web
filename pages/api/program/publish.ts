@@ -1,4 +1,5 @@
 import { Sequelize } from "sequelize";
+import mysql2 from 'mysql2'
 import { getSession } from "next-auth/react"
 import type { NextApiRequest, NextApiResponse } from "next"
 import { createModels } from "../../../lib/createModels";
